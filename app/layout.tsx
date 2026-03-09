@@ -33,20 +33,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} antialiased`}
       >
-        <nav className="glass-nav">
-          <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold premium-gradient-text tracking-tight">
-              AESTHETIC
+        <nav className="glass-nav border-b border-slate-200 dark:border-slate-800">
+          <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <Link href="/" className="text-lg font-bold tracking-tight">
+              MEME MASTER
             </Link>
             <div className="flex gap-8 items-center">
-              <Link href="/" className="hover:text-brand-primary transition-colors font-medium">Home</Link>
-              <Link href="/about" className="hover:text-brand-primary transition-colors font-medium">About</Link>
-              <Link href="/meme-maker" className="hover:text-brand-primary transition-colors font-medium">Meme Maker</Link>
-              <Link href="/contact" className="btn-premium">Contact</Link>
             </div>
           </div>
         </nav>
-        <main className="max-w-7xl mx-auto px-6 py-12">
+        <main className="max-w-7xl mx-auto px-6 py-8">
           {children}
         </main>
       </body>
